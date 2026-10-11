@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tank Test Page</title>
+<style>
+  :root { --bg:#f6f7f9; --card:#ffffff; --ink:#1b1f24; --muted:#5b6470; --accent:#2f6fde; --line:#e3e6ea; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0f1216; --card:#181c22; --ink:#e8ebef; --muted:#9aa3ae; --accent:#6aa0ff; --line:#2a3038; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font-family:-apple-system, "Segoe UI", "Noto Sans TC", "PingFang TC", sans-serif; line-height:1.6; }
+  main { max-width:960px; margin:0 auto; padding:56px 16px; }
+  .tag { font-size:13px; letter-spacing:.08em; color:var(--accent); font-weight:600; }
+  h1 { font-size:clamp(28px,5vw,44px); margin:8px 0 12px; line-height:1.2; }
+  .lead { color:var(--muted); font-size:17px; max-width:640px; }
+  .stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; margin:40px 0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px; }
+  .num { font-size:36px; font-weight:700; color:var(--accent); }
+  .label { color:var(--muted); font-size:14px; }
+  .note { font-size:12px; color:var(--muted); border-top:1px solid var(--line); padding-top:16px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="tag">00 · TEST</div>
+  <h1>我的第一個 GitHub Pages 網站</h1>
+  <p class="lead">如果你看到這個頁面，代表 GitHub Pages 已經成功上線。之後只要把這個 index.html 換成正式內容即可。</p>
+
+  <section class="stats">
+    <div class="card"><div class="num">1</div><div class="label">檔案：index.html</div></div>
+    <div class="card"><div class="num">0</div><div class="label">主機費用（GitHub Pages 免費）</div></div>
+    <div class="card"><div class="num">~1 分</div><div class="label">更新後重新上線時間</div></div>
+  </section>
+
+  <p class="note">測試頁面｜Hosted on GitHub Pages</p>
+</main>
+</body>
+</html>
